@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Website - HOSCARE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9ac64e8b04.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h2>HosCare</h2>
+        </div>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#reviews">Patient Reviews</a></li>
+          <li><a href="#appointments">Appointments</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="./account.html"><i id="account" class="fa-solid fa-user-plus"></i></a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <div class="theme-toggler">
+          <span class="material-symbols-sharp active">light_mode</span>
+          <span class="material-symbols-sharp">dark_mode</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="home-container">
+      <div class="header-text">
+        <h1>Welcome to <span>HosCare</span></h1>
+        <p>Your trusted partner in healthcare.</p>
+      </div>
+      <div class="scroll-images">
+        <img src="Images/hospital.jpg" alt="Image 1">
+        <img src="Images/hospital1.jpg" alt="Image 2">
+        <img src="Images/hospital2.jpg" alt="Image 3">
+        <img src="Images/hospital3.jpg" alt="Image 4">
+        <img src="Images/hospital4.jpg" alt="Image 5">
+        <img src="Images/hospital5.jpg" alt="Image 6">
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="box-container">
+          <div class="box">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Cardiology</h3>
+            <p>Specialized care for heart-related conditions and diseases.</p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-stethoscope"></i>
+            <h3>Internal Medicine</h3>
+            <p>Internal medicine focuses on the prevention, diagnosis, and treatment of adult diseases.</p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-pills"></i>
+            <h3>Pharmacy</h3>
+            <p>Pharmacy services encompass the preparation, dispensation, and management of medications prescribed by
+              healthcare providers.</p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Additional boxes initially hidden -->
+          <div class="box more-box">
+            <i class="fa-solid fa-user-md"></i>
+            <h3>Emergency Care</h3>
+            <p>Emergency care refers to immediate medical attention provided to individuals experiencing acute injuries
+              or sudden onset of severe symptoms. </p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box more-box">
+            <i class="fa-solid fa-notes-medical"></i>
+            <h3>Free Checkups</h3>
+            <p>Comprehensive health assessments to ensure your overall well-being.</p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="box more-box">
+            <i class="fa-solid fa-truck-medical"></i>
+            <h3>24/7 Ambulance</h3>
+            <p>24/7 ambulance services ensure rapid response and transportation of patients requiring medical
+              assistance.</p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="box more-box">
+            <i class="fa-solid fa-bed-pulse"></i>
+            <h3>Bed Facilities</h3>
+            <p>Bed facilities refer to the availability of inpatient beds within healthcare facilities for hospitalized
+              patients. </p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="box more-box">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h3>Total Care</h3>
+            <p>Total care encompasses comprehensive healthcare services designed to meet the diverse needs of patients
+              across various stages of health and illness.</p>
+            <a href="#" class="more">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <!-- End of additional boxes -->
+
+        </div>
+        <!-- View More/Less button -->
+        <div id="viewMoreBtn" class="more">
+          <a href="#" id="viewMoreLink">View More <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="doctors" id="doctors">
+    <h1>Doctors</h1>
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="Images/doctor3.webp" alt="Doctor 3" draggable="false" data-name="Dr. Emily Johnson"
+          data-details="Renowned Pediatrician known for her compassionate care.">
+        <img src="Images/doctor4.webp" alt="Doctor 4" draggable="false" data-name="Dr. Michael Brown"
+          data-details="Orthopedic surgeon with a focus on sports injuries.">
+        <img src="Images/doctor5.webp" alt="Doctor 1" draggable="false" data-name="Dr. Helly Shah"
+          data-details="Expert in taking care of the patients">
+        <img src="Images/doctor4.webp" alt="Doctor 2" draggable="false" data-name="Dr. Jane Smith"
+          data-details="Expert in Neurology and has published numerous research papers.">
+        <img src="Images/doctor3.webp" alt="Doctor 3" draggable="false" data-name="Dr. Helly Shah"
+          data-details="Expert in taking care of the patients">
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+  </section>
+
+  <!-- Doctor Details Modal -->
+  <div class="modal" id="doctorModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="doctorName"></h2>
+      <p id="doctorDetails"></p>
+    </div>
+  </div>
+
+
+  <section class="patient-reviews" id="reviews">
+    <h1>Patient Reviews</h1>
+    <div class="reviews-container">
+      <div class="review">
+        <img src="Images/patient1.png" alt="Patient 1">
+        <p>"Great experience! The staff was friendly and professional."</p>
+        <h3>- John Doe</h3>
+      </div>
+      <div class="review">
+        <img src="Images/patient2.jpg" alt="Patient 2">
+        <p>"I felt well taken care of. Highly recommend this clinic."</p>
+        <h3>- Jane Smith</h3>
+      </div>
+      <div class="review">
+        <img src="Images/patient3.jpg" alt="Patient 3">
+        <p>"Excellent service and great results. Will come back again."</p>
+        <h3>- Mark Johnson</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="appointments">
+    <div class="container">
+      <h2>Book an Appointment</h2>
+      <div class="appointment-form">
+        <form action="#" name="submit-to-google-sheet">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" required>
+
+          <label for="doctor">Select Doctor:</label>
+          <select id="doctor" name="doctor" required>
+            <option value="Dr. John Doe">Dr. John Doe - Cardiologist</option>
+            <option value="Dr. Jane Smith">Dr. Jane Smith - Surgeon</option>
+            <option value="Dr. Michael Brown">Dr. Michael Brown - Neurologist</option>
+            <option value="Dr. Emily Johnson">Dr. Emily Johnson - Pediatrician</option>
+          </select>
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <button type="submit" class="btn">Book Appointment</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form action="#" name="submit-to-google-sheet">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About HosCare</h2>
+        <p>Your trusted healthcare provider, offering a wide range of medical services.</p>
+      </div>
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#appointments">Appointments</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#accounts">Accounts</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact Info</h2>
+        <p>Email: info@hoscare.com</p>
+        <p>Phone: +123 456 7890</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 HosCare. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
